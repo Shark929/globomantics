@@ -1,11 +1,20 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
+
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <link
+          href='https://cdn.jdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css'
+          rel='stylesheet'
+        />
+
+      </Head>
       <body>
-        <Main />
+        <div className='container'>
+          <Main />
+        </div>
         <NextScript />
       </body>
     </Html>
